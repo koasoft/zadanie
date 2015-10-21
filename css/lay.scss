@@ -1,0 +1,357 @@
+
+$default-font: Verdana, Geneva, sans-serif;
+
+
+@mixin reset_margin_and_padding
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .row
+    {
+        @include reset_margin_and_padding;
+        width: 100%;
+        
+        .col-md-12
+        {
+            float: left;
+            width: 100%;
+            
+            .search_panel
+            {
+                float: left;
+                width: 100%;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                
+                form
+                {
+                    float: left;
+                    width: 49%;
+                    
+                    @media (max-width: 660px)
+                    {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    
+                    input
+                    {
+                        float: left;
+                        width: 100%;
+                        height: 50px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 16px;
+                        border: 1px solid #f3f3f3;
+                        border-radius: 6px;
+                        box-sizing: border-box;
+                    }
+                    
+                    a#search
+                    {
+                        position: absolute;
+                        float: left;
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 18px;
+                        margin-bottom: 12px;
+                        margin-left: -25px;
+                        background-image: url(../img/search.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+                
+                .sort
+                {
+                    float: right;
+                    height: 50px;
+                    width: 49%;
+                    
+                    @media (max-width: 660px)
+                    {
+                        width: 100%;
+                    }
+                    
+                    form
+                    {
+                        float: right;
+                        width: 100%;
+                        
+                        label
+                        {
+                            float: right;
+                            height: 50px;
+                            margin-right: 25px;
+                            font-family: $default-font;
+                            font-size: 16px;
+                            line-height: 50px;
+                            color: #393939;
+                            
+                            @media (max-width: 340px)
+                            {
+                                display: none;
+                            }
+                        }
+                        
+                        select
+                        {
+                            float: right;
+                            height: 50px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-size: 16px;
+                            border: 1px solid #f3f3f3;
+                            border-radius: 6px;
+                            box-sizing: border-box;
+                            
+                            @media (max-width: 340px)
+                            {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .object
+            {
+                float: right;
+                width: 49%;
+                min-width: 300px;
+                min-height: 200px;
+                margin-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #f3f3f3;
+                border-radius: 6px;
+                box-sizing: border-box;
+                
+                @media (max-width: 660px)
+                {
+                    width: 100%;
+                    min-width: 260px;
+                }
+                
+                &:first-child
+                {
+                    float: left;
+                
+                    @media (max-width: 660px)
+                    {
+                        float: right;
+                    }
+                }
+                
+                &.premium
+                {
+                    border-color: #55b14d;
+                }
+                
+                .content
+                {
+                    float: left;
+                    width: 100%;
+                    padding-top: 25px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                 
+                    .col-md-4
+                    {
+                        float: left;
+                        
+                        @media (max-width: 999px)
+                        {
+                            float: none;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        
+                        img
+                        {
+                            float: left;
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    
+                    .col-md-8
+                    {
+                        
+                        @media (max-width: 999px)
+                        {
+                            float: none;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        
+                        a
+                        {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 25px;
+                            font-family: $default-font;
+                            font-size: 18px;
+                            line-height: 27px;
+                            font-weight: bold;
+                            color: #212121;
+                            text-decoration: none;
+                            
+                            @media (max-width: 999px)
+                            {
+                                text-align: center;
+                            }
+                        }
+                        
+                        p
+                        {
+                            float: left;
+                            width: 100%;
+                            margin: 0px;
+                            font-family: $default-font;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #212121;
+                            
+                            @media (max-width: 999px)
+                            {
+                                text-align: center;
+                            }
+                            
+                            img
+                            {
+                                float: left;
+                                width: 16px;
+                                height: 16px;
+                                margin-top: 4px;
+                                margin-right: 10px;
+                            
+                                @media (max-width: 999px)
+                                {
+                                   float: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                footer
+                {
+                    float: left;
+                    width: 100%;
+                    margin-top: 10px;
+                    background-color: #fafafa;
+                    border-bottom-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    
+                    .mark
+                    {
+                        float: left;
+                        margin-left: 25px;
+                        background-color: inherit;
+                        
+                        @media (max-width: 999px)
+                        {
+                            float: none;
+                            width: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            clear: both;
+                        }
+                        
+                        p
+                        {
+                            float: left;
+                            height: 20px;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            font-family: $default-font;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #212121;
+                        
+                            @media (max-width: 999px)
+                            {
+                                float: none;
+                                text-align: center;
+                            }
+
+                            img
+                            {
+                                float: left;
+                                width: 100px;
+                                height: 20px;
+                                margin-right: 10px;
+                        
+                                @media (max-width: 999px)
+                                {
+                                    float: none;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .stats
+                    {
+                        float: right;
+                        margin-right: 25px;
+                        background-color: inherit;
+                        
+                        @media (max-width: 999px)
+                        {
+                            width: 90%;
+                            margin-left: 5%;
+                            margin-right: 5%;
+                            clear: both;
+                        }
+                        
+                        p
+                        {
+                            float: left;
+                            height: 20px;
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            font-family: $default-font;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #212121;
+                        
+                            @media (max-width: 999px)
+                            {
+                                float: right;
+                            }
+                            
+                            
+                            &:first-child
+                            {
+                                margin-right: 20px;
+                        
+                                @media (max-width: 999px)
+                                {
+                                    float: left;
+                                }
+                            }
+                            
+                            
+                            img
+                            {
+                                float: left;
+                                width: 16px;
+                                height: 16px;
+                                margin-top: 2px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

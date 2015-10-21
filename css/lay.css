@@ -1,0 +1,227 @@
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container .row {
+    margin: 0px;
+    padding: 0px;
+    width: 100%; }
+    .container .row .col-md-12 {
+      float: left;
+      width: 100%; }
+      .container .row .col-md-12 .search_panel {
+        float: left;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px; }
+        .container .row .col-md-12 .search_panel form {
+          float: left;
+          width: 49%; }
+          @media (max-width: 660px) {
+            .container .row .col-md-12 .search_panel form {
+              width: 100%;
+              margin-bottom: 10px; } }
+          .container .row .col-md-12 .search_panel form input {
+            float: left;
+            width: 100%;
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 16px;
+            border: 1px solid #f3f3f3;
+            border-radius: 6px;
+            box-sizing: border-box; }
+          .container .row .col-md-12 .search_panel form a#search {
+            position: absolute;
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-top: 18px;
+            margin-bottom: 12px;
+            margin-left: -25px;
+            background-image: url(../img/search.png);
+            background-repeat: no-repeat; }
+        .container .row .col-md-12 .search_panel .sort {
+          float: right;
+          height: 50px;
+          width: 49%; }
+          @media (max-width: 660px) {
+            .container .row .col-md-12 .search_panel .sort {
+              width: 100%; } }
+          .container .row .col-md-12 .search_panel .sort form {
+            float: right;
+            width: 100%; }
+            .container .row .col-md-12 .search_panel .sort form label {
+              float: right;
+              height: 50px;
+              margin-right: 25px;
+              font-family: Verdana, Geneva, sans-serif;
+              font-size: 16px;
+              line-height: 50px;
+              color: #393939; }
+              @media (max-width: 340px) {
+                .container .row .col-md-12 .search_panel .sort form label {
+                  display: none; } }
+            .container .row .col-md-12 .search_panel .sort form select {
+              float: right;
+              height: 50px;
+              padding-left: 20px;
+              padding-right: 20px;
+              font-size: 16px;
+              border: 1px solid #f3f3f3;
+              border-radius: 6px;
+              box-sizing: border-box; }
+              @media (max-width: 340px) {
+                .container .row .col-md-12 .search_panel .sort form select {
+                  width: 100%; } }
+      .container .row .col-md-12 .object {
+        float: right;
+        width: 49%;
+        min-width: 300px;
+        min-height: 200px;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #f3f3f3;
+        border-radius: 6px;
+        box-sizing: border-box; }
+        @media (max-width: 660px) {
+          .container .row .col-md-12 .object {
+            width: 100%;
+            min-width: 260px; } }
+        .container .row .col-md-12 .object:first-child {
+          float: left; }
+          @media (max-width: 660px) {
+            .container .row .col-md-12 .object:first-child {
+              float: right; } }
+        .container .row .col-md-12 .object.premium {
+          border-color: #55b14d; }
+        .container .row .col-md-12 .object .content {
+          float: left;
+          width: 100%;
+          padding-top: 25px;
+          padding-left: 25px;
+          padding-right: 25px; }
+          .container .row .col-md-12 .object .content .col-md-4 {
+            float: left; }
+            @media (max-width: 999px) {
+              .container .row .col-md-12 .object .content .col-md-4 {
+                float: none;
+                margin-left: auto;
+                margin-right: auto; } }
+            .container .row .col-md-12 .object .content .col-md-4 img {
+              float: left;
+              width: 100%;
+              display: block; }
+          @media (max-width: 999px) {
+            .container .row .col-md-12 .object .content .col-md-8 {
+              float: none;
+              margin-left: auto;
+              margin-right: auto; } }
+          .container .row .col-md-12 .object .content .col-md-8 a {
+            float: left;
+            width: 100%;
+            margin-bottom: 25px;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: bold;
+            color: #212121;
+            text-decoration: none; }
+            @media (max-width: 999px) {
+              .container .row .col-md-12 .object .content .col-md-8 a {
+                text-align: center; } }
+          .container .row .col-md-12 .object .content .col-md-8 p {
+            float: left;
+            width: 100%;
+            margin: 0px;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            color: #212121; }
+            @media (max-width: 999px) {
+              .container .row .col-md-12 .object .content .col-md-8 p {
+                text-align: center; } }
+            .container .row .col-md-12 .object .content .col-md-8 p img {
+              float: left;
+              width: 16px;
+              height: 16px;
+              margin-top: 4px;
+              margin-right: 10px; }
+              @media (max-width: 999px) {
+                .container .row .col-md-12 .object .content .col-md-8 p img {
+                  float: none; } }
+        .container .row .col-md-12 .object footer {
+          float: left;
+          width: 100%;
+          margin-top: 10px;
+          background-color: #fafafa;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px; }
+          .container .row .col-md-12 .object footer .mark {
+            float: left;
+            margin-left: 25px;
+            background-color: inherit; }
+            @media (max-width: 999px) {
+              .container .row .col-md-12 .object footer .mark {
+                float: none;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                clear: both; } }
+            .container .row .col-md-12 .object footer .mark p {
+              float: left;
+              height: 20px;
+              margin-top: 15px;
+              margin-bottom: 15px;
+              font-family: Verdana, Geneva, sans-serif;
+              font-size: 16px;
+              line-height: 20px;
+              color: #212121; }
+              @media (max-width: 999px) {
+                .container .row .col-md-12 .object footer .mark p {
+                  float: none;
+                  text-align: center; } }
+              .container .row .col-md-12 .object footer .mark p img {
+                float: left;
+                width: 100px;
+                height: 20px;
+                margin-right: 10px; }
+                @media (max-width: 999px) {
+                  .container .row .col-md-12 .object footer .mark p img {
+                    float: none; } }
+          .container .row .col-md-12 .object footer .stats {
+            float: right;
+            margin-right: 25px;
+            background-color: inherit; }
+            @media (max-width: 999px) {
+              .container .row .col-md-12 .object footer .stats {
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                clear: both; } }
+            .container .row .col-md-12 .object footer .stats p {
+              float: left;
+              height: 20px;
+              margin-top: 20px;
+              margin-bottom: 10px;
+              font-family: Verdana, Geneva, sans-serif;
+              font-size: 16px;
+              line-height: 20px;
+              color: #212121; }
+              @media (max-width: 999px) {
+                .container .row .col-md-12 .object footer .stats p {
+                  float: right; } }
+              .container .row .col-md-12 .object footer .stats p:first-child {
+                margin-right: 20px; }
+                @media (max-width: 999px) {
+                  .container .row .col-md-12 .object footer .stats p:first-child {
+                    float: left; } }
+              .container .row .col-md-12 .object footer .stats p img {
+                float: left;
+                width: 16px;
+                height: 16px;
+                margin-top: 2px;
+                margin-right: 10px; }
+
+/*# sourceMappingURL=lay.css.map */
